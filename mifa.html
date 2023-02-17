@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOIN US</title>
+
+    <style>
+      body{
+        width: 99vw;
+        background-image: url(images/78.jpg);
+        font-family: 'Times New Roman';
+        text-align: center;
+        color: #fff;
+        background-size: 100% 100%;
+        background-position: center;
+        min-height: 90vh;
+      }
+      .contactForm{
+            box-shadow: 2px 5px 10px #000;
+            width: 40%;
+            padding: 40px;
+            background: #fff;
+            border-radius: 40px;
+            margin-left: 350px;
+            margin-top: 50px;
+        }
+        .contactForm h2{
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+        .contactForm .inputBox{
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .contactForm .inputBox input,
+        .contactForm .inputBox textarea{
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+        .contactForm .inputBox span{
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+        .contactForm .inputBox input:focus ~ span,
+        .contactForm .inputBox input:valid ~ span
+        .contactForm .inputBox textarea:focus ~ span,
+        .contactForm .inputBox textarea:valid ~ span{
+            color: #ff0404;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+        .contactForm .inputBox input[type="submit"]{
+            width: 100px;
+            background: #ff0404;
+            color: #fff;
+            border-radius: 20px;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+      <div class="contactForm">
+        <form>
+            <h2>Sign up</h2>
+            <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Username</span>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="" required="required">
+                <span>Email</span>
+            </div>
+            <div class="inputBox">
+                <textarea required="required" minlength="8 characters" maxlength="14 characters"></textarea>
+                <span>Password</span>
+            </div>
+            <div class="inputBox">
+                <input type="submit" name="" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
